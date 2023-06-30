@@ -16,7 +16,7 @@ public record UserDocument(@Id
                            String email,
                            @CreatedDate
                            @Field("created_at")
-                           OffsetDateTime createAt,
+                           OffsetDateTime createdAt,
                            @Field("updated_at")
                            @LastModifiedDate
                            OffsetDateTime updatedAt) {

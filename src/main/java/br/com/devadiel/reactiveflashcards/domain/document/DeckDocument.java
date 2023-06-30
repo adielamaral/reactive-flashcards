@@ -18,7 +18,7 @@ public record DeckDocument(@Id
                            Set<Card> cards,
                            @CreatedDate
                            @Field("created_at")
-                           OffsetDateTime createAt,
+                           OffsetDateTime createdAt,
                            @Field("updated_at")
                            @LastModifiedDate
                            OffsetDateTime updatedAt) {

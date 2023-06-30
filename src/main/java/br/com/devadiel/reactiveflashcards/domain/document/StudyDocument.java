@@ -18,7 +18,7 @@ public record StudyDocument(@Id
                             List<Question> questions,
                             @CreatedDate
                             @Field("created_at")
-                            OffsetDateTime createAt,
+                            OffsetDateTime createdAt,
                             @Field("updated_at")
                             @LastModifiedDate
                             OffsetDateTime updatedAt) {
