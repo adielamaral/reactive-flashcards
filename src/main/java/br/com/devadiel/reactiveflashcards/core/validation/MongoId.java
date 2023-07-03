@@ -10,7 +10,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 @Target({TYPE, METHOD, FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER, TYPE_USE})
 @Retention(RUNTIME)
-@Constraint(validatedBy = {MonoIdValidator.class})
+@Constraint(validatedBy = {MongoIdValidator.class})
 public @interface MongoId {
 
     String message() default "{br.com.devadiel.reactiveflashcards.MongoId.message}";

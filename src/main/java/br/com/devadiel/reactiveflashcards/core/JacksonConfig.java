@@ -33,4 +33,5 @@ public class JacksonConfig {
     Jackson2JsonDecoder jackson2JsonDecoder(final ObjectMapper objectMapper) {
         return new Jackson2JsonDecoder(objectMapper);
     }
+
 }

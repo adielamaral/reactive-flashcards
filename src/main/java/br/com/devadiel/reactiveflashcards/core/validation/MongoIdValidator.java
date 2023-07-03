@@ -8,7 +8,7 @@ import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
 @Slf4j
-public class MonoIdValidator implements ConstraintValidator<MongoId, String> {
+public class MongoIdValidator implements ConstraintValidator<MongoId, String> {
 
     @Override
     public void initialize(MongoId constraintAnnotation) {
@@ -17,7 +17,7 @@ public class MonoIdValidator implements ConstraintValidator<MongoId, String> {
 
     @Override
     public boolean isValid(String value, ConstraintValidatorContext context) {
-        log.info("=== checking if {} is a valid mongoDB id", value);
+        log.info("==== checking if {} is a valid mongoDB id", value);
         return StringUtils.isNotBlank(value) && ObjectId.isValid(value);
     }
 }

@@ -23,7 +23,7 @@ repositories {
 }
 
 ext {
-    mapstructVersion = '1.5.0.Final'
+    mapstructVersion = '1.5.1.Final'
 }
 
 dependencies {
